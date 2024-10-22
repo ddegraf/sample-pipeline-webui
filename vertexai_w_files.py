@@ -1,5 +1,6 @@
 """
-title: Google GenAI (Vertex AI)
+title: Google GenAI (Vertex AI) Manifold Pipeline
+author: Hiromasa Kakehashi
 date: 2024-09-19
 version: 1.0
 license: MIT
@@ -26,6 +27,7 @@ from vertexai.generative_models import (
     Part,
 )
 
+
 class Pipeline:
     """Google GenAI pipeline"""
 
@@ -48,10 +50,7 @@ class Pipeline:
             }
         )
         self.pipelines = [
-            {"id": "gemini-1.5-flash-001", "name": "Gemini 1.5 Flash"},
-            {"id": "gemini-1.5-pro-001", "name": "Gemini 1.5 Pro"},
-            {"id": "gemini-flash-experimental", "name": "Gemini 1.5 Flash Experimental"},
-            {"id": "gemini-pro-experimental", "name": "Gemini 1.5 Pro Experimental"},
+            {"id": "gemini-1.5-flash-001", "name": "Gemini 1.5 Flash (test)"}
         ]
 
     async def on_startup(self) -> None:
